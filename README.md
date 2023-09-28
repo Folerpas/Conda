@@ -1,6 +1,8 @@
-# Create conda environment in HPC
+# How to create conda environment in HPC
 
-First check the modules available in the HPC, we are going to need Anaconda
+## Step1: Create the environment
+
+Check the modules available in the HPC, we are going to need Anaconda
 
 ```
 module avail anaconda
@@ -16,4 +18,12 @@ I created an environment to use Python. With Python I want to read netCDF data a
 
 ```
 conda create -y -n py36 python=3.6 netcdf4 matplotlib=3.2
+```
+
+## Step2: Activate the environment
+
+Activate the new environment
+
+```
+conda activate py36
 ```
