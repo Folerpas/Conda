@@ -22,8 +22,24 @@ conda create -y -n py36 python=3.6 netcdf4 matplotlib=3.2
 
 ## Step2: Activate the environment
 
-Activate the new environment
+Activate my new environment
 
 ```
 conda activate py36
+```
+
+Check if the correct Python version is installed in my environment
+
+```
+python --version
+```
+
+## Step3: Install libraries inside the environment
+
+I am installing some libraries needed to proper execute my scripts :)
+
+```
+conda install -c anaconda ipython
+conda update -n base -c defaults conda
+conda install basemap
 ```
